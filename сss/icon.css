@@ -412,16 +412,12 @@
   padding-right: 40px;
 }
 .contract-text {
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text);
   border-radius: 4px;
   transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contract-text > a {
+.contract-link {
   color: var(--logo-link-color);
   text-decoration: none;
   text-decoration-line: underline;
@@ -441,7 +437,6 @@
 }
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -455,7 +450,6 @@ textarea {
   padding: 12px 16px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -476,7 +470,6 @@ textarea {
 .modal-transformation > .primary-label {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 12px;
   line-height: 1.14;

@@ -14,6 +14,7 @@
   --color-mini-iconrgbargba: rgba(175, 177, 184, 1);
   --background-overlay: rgba(196, 196, 196, 1);
   --portfolio-hover: rgba(33, 150, 243, 0.9);
+  --border-modal-: rgba(33, 33, 33, 0.2);
 }
 
 .icon-nav {
@@ -209,6 +210,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  flex-direction: column;
   width: 521px;
   height: 581px;
   position: absolute;
@@ -249,6 +251,10 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-background-color);
 }
+.close-button:hover,
+.close-button:focus {
+  fill: var(--logo-link-color);
+}
 
 /* Adds animation when hovering. */
 .box-footer {
@@ -274,26 +280,21 @@
 
 .box-social {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
 }
-.list-box {
-  position: relative;
-  display: flex;
-}
-
 .icon-telegram {
   position: absolute;
   display: inline;
   top: 13px;
-  right: 28px;
+}
+.button-box > .icon-telegram {
   margin-left: 10px;
 }
 .button-box {
-  display: inline;
   text-align: left;
   width: 200px;
-  position: relative;
+  position: absolute;
   padding: 10px 28px;
   font-family: inherit;
   font-weight: 700;
@@ -313,4 +314,179 @@
   color: var(--primary-background-color);
   background-color: var(--active-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+}
+.button-moadal {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: var(--logo-link-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal:hover,
+.button-modal:focus {
+  color: var(--primary-background-color);
+  background-color: var(--active-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+}
+.button-moadal {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: var(--logo-link-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal:hover,
+.button-modal:focus {
+  color: var(--primary-background-color);
+  background-color: var(--active-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 2px;
+}
+.button-modal {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: var(--logo-link-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 52px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal:hover,
+.button-modal:focus {
+  color: var(--primary-background-color);
+  background-color: var(--active-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal {
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contract-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+  border-radius: 4px;
+  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contract-text > a {
+  color: var(--logo-link-color);
+  text-decoration: none;
+}
+.modal-transformation {
+  display: flex;
+  flex-direction: column;
+}
+.input-wrap {
+  position: relative;
+}
+.modal-transformation svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translatey(-50%);
+}
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+textarea {
+  resize: none;
+  border: 1px solid var(--border-modal-);
+  border-radius: 4px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-transformation input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border-radius: 4px;
+  border-color: var(--border-modal-);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-transformation > .primary-label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.modal-transformation textarea {
+  margin-bottom: 20px;
+}
+.modal-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.modal-transformation svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-transformation:focus-within svg {
+  fill: var(--logo-link-color);
+}
+.modal-transformation:focus-within textarea {
+  border: 1px solid var(--logo-link-color);
 }

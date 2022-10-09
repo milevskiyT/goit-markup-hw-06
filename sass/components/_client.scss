@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(175, 177, 184, 1);
-    background-color: var(--primary-background-color);
-    fill: var(--color-mini-iconrgbargba);
+    background-color: $--primary-background-color;
+    fill: $--color-mini-iconrgbargba;
     gap: 30px;
     border-radius: 4px;
     transition-duration: 250ms;
@@ -15,7 +15,7 @@
 
 .client__container .client__container--link:hover,
 .client__container .client__container--link:focus {
-    fill: rgba(33, 150, 243, 1);
-    background-color: var(--primary-background-color);
-    border: 1px solid var(--logo-link-color);
+    fill:$--logo-link-color;
+    background-color: $--primary-background-color;
+    border: 1px solid $--logo-link-color;
 }

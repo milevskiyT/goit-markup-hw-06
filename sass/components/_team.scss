@@ -1,5 +1,5 @@
 .section__team {
-    background-color: var(--second-background);
+    background-color: $--second-background;
 }
 
 .team-foto__list {
@@ -9,7 +9,7 @@
 
 .team-foto__item {
     width: calc((100% - 90px) / 4);
-    background-color: var(--primary-background-color);
+    background-color: $--primary-background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -28,7 +28,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    color: var(--primary-text-color);
+    color: $--primary-text-color;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 1.2;
-    color: var(--secondary-text);
+    color: $--secondary-text;
 }
 
 /* soc iconku  pracivnukiv*/
@@ -61,14 +61,14 @@
     border-radius: 50px;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-background-color);
-    fill: var(--color-mini-iconrgbargba);
+    background-color: $--primary-background-color;
+    fill: $--color-mini-iconrgbargba;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon .social-icon__link:hover,
 .social-icon .social-icon__link:focus {
-    background-color: var(--logo-link-color);
-    fill: var(--primary-background-color);
+    background-color: $--logo-link-color;
+    fill: $--primary-background-color;
 }

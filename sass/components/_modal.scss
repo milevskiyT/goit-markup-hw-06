@@ -6,7 +6,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: var(--primary-background-color);
+    background-color: $--primary-background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -43,12 +43,12 @@
     position: absolute;
     border-radius: 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--primary-background-color);
+    background-color: $--primary-background-color;
 }
 
 .close-button:hover,
 .close-button:focus {
-    fill: var(--logo-link-color);
+    fill: $--logo-link-color;
 }
 
 /* Adds animation when hovering. */
@@ -69,8 +69,8 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--primary-background-color);
-    background-color: var(--logo-link-color);
+    color: $--primary-background-color;
+    background-color: $--logo-link-color;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -82,8 +82,8 @@
 
 .button-modal:hover,
 .button-modal:focus {
-    color: var(--primary-background-color);
-    background-color: var(--active-button);
+    color: $--primary-background-colo;
+    background-color: $--active-butto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -92,14 +92,14 @@
 }
 
 .contract-text {
-    color: var(--secondary-text);
+    color: $--secondary-tex;
     border-radius: 4px;
     transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 20px;
 }
 
 .contract-link {
-    color: var(--logo-link-color);
+    color: $--logo-link-color;
     text-decoration: none;
     text-decoration-line: underline;
 }
@@ -132,7 +132,7 @@ textarea::placeholder {
 
 textarea {
     resize: none;
-    border: 1px solid var(--border-modal-);
+    border: 1px solid $--border-modal;
     border-radius: 4px;
     padding: 0;
     padding-left: 16px;
@@ -151,7 +151,7 @@ textarea {
     height: 40px;
     padding-left: 42px;
     border-radius: 4px;
-    border: 1px solid var(--border-modal-);
+    border: 1px solid $--border-modal;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -163,7 +163,7 @@ textarea {
     font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    color: var(--secondary-text);
+    color: $--secondary-text;
     margin-bottom: 4px;
 }
 
@@ -177,15 +177,15 @@ textarea {
 }
 
 .modal-transformation:focus-within svg {
-    fill: var(--logo-link-color);
+    fill: $--logo-link-color;
 }
 
 .modal-transformation:focus-within textarea {
-    border: 1px solid var(--logo-link-color);
+    border: 1px solid $--logo-link-color;
 }
 
 .modal-transformation:focus-within input {
-    border: 1px solid var(--logo-link-color);
+    border: 1px solid $--logo-link-color;
 }
 
 .label {
@@ -206,15 +206,15 @@ textarea {
 }
 
 .checkbox:checked+.icon-contr {
-    background-color: var(--logo-link-color);
+    background-color: $--logo-link-color;
     background-size: contain;
     background-origin: content-box;
-    border-color: var(--logo-link-color);
+    border-color: $--logo-link-color;
 }
 
 .icon-contr {
     display: inline-block;
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid $--primary-text-color;
     border-radius: 2px;
     margin-right: 10px;
 }
